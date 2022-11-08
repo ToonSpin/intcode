@@ -104,9 +104,9 @@ impl Program {
     /// Creates a new Intcode program.
     ///
     /// The `Program` returned will start out as Running.
-    pub fn new(program_vec: &Vec<Number>) -> Program {
+    pub fn new(program_vec: Vec<Number>) -> Program {
         Program {
-            program: program_vec.clone(),
+            program: program_vec,
             sp: 0,
             input: Vec::new(),
             input_pos: 0,
